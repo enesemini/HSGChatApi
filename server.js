@@ -21,7 +21,7 @@ app.use(function(req, res, next){
 
     res.setHeader('Access-Control-Allow-Methods', 'GET', 'POST', 'DELETE');
 
-    res.setHeader('Access-Control-Allow-Header', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
     next();
 });
@@ -35,7 +35,6 @@ app.get('/posts', function(req, res, next){
 });
 
 app.post('/posts', function(req, res, next){
-    var date = new Date();
     console.log(req.body);
     chatHistory.push({message: req.body.message, author: req.body.author, date: req.body.date});
     //res.send(chatHistory);
