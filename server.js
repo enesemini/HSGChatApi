@@ -37,9 +37,8 @@ app.get('/posts', function(req, res, next){
 app.post('/posts', function(req, res, next){
     var date = new Date();
     console.log(req.body);
-    chatHistory.push({message: req.body.message, nickname: req.body.nickname, date: date});
-    res.send(chatHistory);
-
+    chatHistory.push({message: req.body.message, author: req.body.author, date: req.body.date});
+    //res.send(chatHistory);
     res.json({message: 'Nachricht ist erstellt'});
 });
 
