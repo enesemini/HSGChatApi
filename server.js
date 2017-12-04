@@ -38,7 +38,7 @@ app.post('/posts', function(req, res, next){
     console.log(req.body);
     chatHistory.push({message: req.body.message, author: req.body.author, date: req.body.date});
     //res.send(chatHistory);
-    res.json({message: 'Nachricht ist erstellt'});
+    res.json({message: 'API: Nachricht wurde erfolgreich erstellt.'});
 });
 
 app.listen(app.get('port'), function(){
