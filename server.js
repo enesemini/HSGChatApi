@@ -8,7 +8,13 @@ app.set('port', port);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-var chatHistory = [];
+var chatHistory = [
+    {
+        'date': 'Mon Dec 04 2017 12:31:12 GMT+0100 (CET)',
+        'author': 'Enes Emini',
+        'message': 'Test Message retrieved from API'
+    }
+];
 
 app.use(function(req, res, next){
     res.setHeader('Access-Control-Allow-Origin', '*');
