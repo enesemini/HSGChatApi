@@ -10,9 +10,9 @@ app.use(bodyParser.json());
 
 var chatHistory = [
     {
-        'date': 'Mon Dec 04 2017 12:31:12 GMT+0100 (CET)',
-        'author': 'Enes Emini',
-        'message': 'Test Message retrieved from API'
+        date: 'Mon Dec 04 2017 12:31:12 GMT+0100 (CET)',
+        author: 'Enes Emini',
+        message: 'Test Message retrieved from API'
     }
 ];
 
