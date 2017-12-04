@@ -1,0 +1,7 @@
+{
+  "name": "HSGChat on Heroku",
+  "description": "Api für eine Angular Applikation im Rahmen eines Kurses an der Universität St.Gallen",
+  "repository": "https://github.com/enesemini/HSGChatApi",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
