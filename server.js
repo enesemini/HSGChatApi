@@ -9,16 +9,18 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 var chatHistory = [
-    {
-        'date': 'Mon Dec 04 2017 12:31:12 GMT+0100 (CET)',
-        'author': 'Enes Emini',
-        'message': 'Test Message 1 retrieved from API'
-    },
-    {
-        'date': 'Mon Dec 04 2017 12:31:12 GMT+0100 (CET)',
-        'author': 'Flavian',
-        'message': 'Test Message 2 retrieved from API'
-    }
+    posts: [
+        {
+            'date': 'Mon Dec 04 2017 12:31:12 GMT+0100 (CET)',
+            'author': 'Enes Emini',
+            'message': 'Test Message 1 retrieved from API'
+        },
+        {
+            'date': 'Mon Dec 04 2017 12:31:12 GMT+0100 (CET)',
+            'author': 'Flavian',
+            'message': 'Test Message 2 retrieved from API'
+        }
+    ]
 ];
 
 app.use(function(req, res, next){
