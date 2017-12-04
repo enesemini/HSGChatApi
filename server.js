@@ -12,7 +12,7 @@ var chatHistory = [
     {
         author: "Enes Emini",
         message: "Test Message retrieved from API",
-        date: new Date();
+        date: new Date()
     }
 ];
 
