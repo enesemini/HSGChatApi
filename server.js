@@ -24,13 +24,12 @@ app.get('/', function(req, res, next){
     res.json({message: 'Hallo API Benutzer...'});
 });
 
-app.get('/history', function(req, res, next){
+app.get('/posts', function(req, res, next){
     res.send(chatHistory);
 });
 
-app.post('/history', function(req, res, next){
+app.post('/posts', function(req, res, next){
     var date = new Date();
-
     console.log(req.body);
     chatHistory.push({message: req.body.message, nickname: req.body.nickname, date: date});
     res.send(chatHistory);
