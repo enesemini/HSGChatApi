@@ -29,7 +29,7 @@ app.use(function(req, res, next){
 
     res.setHeader('Access-Control-Allow-Methods', 'GET', 'POST', 'DELETE');
 
-    res.setHeader('Access-Control-Allow-Header', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
     next();
 });
