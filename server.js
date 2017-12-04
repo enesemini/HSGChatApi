@@ -9,27 +9,19 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 var chatHistory = [
-    'posts': [
-        {
-            'date': 'Mon Dec 04 2017 12:31:12 GMT+0100 (CET)',
-            'author': 'Enes Emini',
-            'message': 'Test Message 1 retrieved from API'
-        },
-        {
-            'date': 'Mon Dec 04 2017 12:31:12 GMT+0100 (CET)',
-            'author': 'Flavian',
-            'message': 'Test Message 2 retrieved from API'
-        }
-    ]
+    {
+        'date': 'Mon Dec 04 2017 12:31:12 GMT+0100 (CET)',
+        'author': 'Enes Emini',
+        'message': 'Test Message retrieved from API'
+    }
 ];
-
 
 app.use(function(req, res, next){
     res.setHeader('Access-Control-Allow-Origin', '*');
 
     res.setHeader('Access-Control-Allow-Methods', 'GET', 'POST', 'DELETE');
 
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.setHeader('Access-Control-Allow-Header', 'Origin, X-Requested-With, Content-Type, Accept');
 
     next();
 });
